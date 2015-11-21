@@ -1,0 +1,384 @@
+@import  "https://fonts.googleapis.com/css?family=Roboto:900, 300,100,100italic,300italic";
+@import  "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic";
+@import  "https://fonts.googleapis.com/css?family=Raleway:900, 300";
+@import  "https://fonts.googleapis.com/css?family=Roboto+Slab:300";
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+*,:before,:after {
+    box-sizing: inherit;
+}
+
+
+img, i {
+	max-width: 100%;
+}
+
+/* start media area */
+@media all and (max-width: 830px){
+  .nav {
+    border-bottom: 0;
+  }
+
+  .clearfix {
+    width: 100%;
+    padding-left: 0px;
+    display: none;
+  }
+
+  .menu ul {
+    display: none;
+    height: auto;
+  }
+
+  .menu li {
+    display: none;
+  }
+  .menu {
+    margin: 0 auto;
+  }
+
+  .nav a#pull:after {
+  	content:"";
+  	background: url('http://i.imgur.com/fkJciEZ.png') no-repeat;
+  	width: 60px;
+  	height: 60px;
+  	display: inline-block;
+  	position: absolute;
+    top: 35px;
+    right: 0px;
+  }
+	.nav li {
+		display: block;
+    text-align: center;
+		width: 100%;
+    margin-bottom: 10px;
+	}
+
+  #bg_text:before {
+    font-size: 10px;
+    color: red;
+  }
+}
+
+/* end of media area */
+
+
+.nav {
+    margin-right: 5%;
+    margin-left: 10%;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+    position: relative;
+}
+.nav li a {
+  box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    color: white;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+  border-bottom: 3px solid white;
+}
+.name {
+    display: inline-block;
+    float:left;
+}
+
+.nav li a#bold {
+  font-weight: bold;
+}
+.name h1 {
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+}
+
+.menu {
+    margin-top: 20px;
+    display: inline-block;
+    float:right;
+}
+
+.menu li{
+    text-transform: uppercase;
+    list-style: none;
+    margin-right: 10px;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+.container {
+    width: 100%;
+}
+
+.first {
+    width: 100%;
+}
+
+.section-1:before {
+    background-image: url(http://i.imgur.com/tjpmzht.jpg);
+    background-repeat: no-repeat;
+}
+
+.section {
+    position: relative;
+    overflow: hidden;
+}
+
+.section:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+  	height: 650px;
+    width: 100%;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.content-1 {
+    color: #fff;
+    font-family: 'Roboto',sans-serif;
+    height: 800px;
+    position: relative;
+    text-align: center;
+}
+
+.content-1 img {
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.content-1 img:hover{
+    webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+#bg_text {
+   font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    margin: 0;
+}
+
+.content-1 p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.content-2 {
+    font-family: 'Roboto',sans-serif;
+}
+
+.twice {
+    width: 100%;
+    margin-top: 70px;
+}
+
+#h1 {
+    font-weight: 200;
+    font-size: 70px;
+    margin-top: 30px;
+}
+
+.basket {
+    width: 100%;
+    margin: 30px 100% 0 3%;
+    text-align: center;
+}
+
+#box {
+    height: 140px;
+    width: 22.5%;
+    border: 2px solid #000;
+    float: left;
+}
+
+.fa-html {
+    font-size: 1.5em;
+}
+
+.three {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.col {
+    display: inline-block;
+    width: 30%;
+}
+
+.col i {
+    font-size: 200px;
+    opacity: .5;
+}
+
+.col i:hover {
+    opacity: 1;
+}
+
+.col h1 {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+}
+
+.col p {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.section-2:before {
+    background-image: url(https://images.unsplash.com/uploads/1412282232015a06e258a/4bdd2a58?ixlib=rb-0.3.5&q=80&fm=jpg&w=1080&fit=max&s=d05e3a5044f2aa8730ddf85bf094c0af);
+/*
+	http://i.imgur.com/GK20Q2a.jpg
+	*/
+    width: 100%;
+}
+
+.content-3 {
+    color: #fff;
+}
+
+.content-3 h1 {
+    color: #fff;
+    font-weight: 200;
+    font-size: 70px;
+    margin-top: 30px;
+    font-family: 'Roboto',sans-serif;
+}
+
+.sunrin h1 {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+.sunrin {
+    display: inline-block;
+    width: 45%;
+}
+
+.sunrin img {
+    width: 140px;
+    height: 140px;
+}
+
+.sunrin p {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    font-size: vw;
+    font-style: italic;
+}
+
+.Ilove {
+    margin-top: 100px;
+}
+
+.you {
+    display: inline-block;
+    width: 45%;
+    opacity: .5;
+}
+
+.you:hover {
+    opacity: 1;
+}
+
+.content-4 h1 {
+    font-weight: 200;
+    font-size: 70px;
+    margin-top: 30px;
+    font-family: 'Roboto',sans-serif;
+}
+
+.content-4 p {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    font-size: 2vw;
+    font-style: italic;
+}
+
+
+.content-3:before {
+	height: 1000px;
+}
+
+/* All Device */
+@media all and (max-width:650px){
+
+	.content-2, .content-3{
+		height: 900px;
+	}
+	.col {
+		width: 100%;
+	}
+	.fa-html5:before, .fa-cogs:before, .fa-bug:before {
+		font-size: 35vw;
+	}
+	.sex {
+		float: right;
+		margin-right: 40px;
+		margin-top: 25px;
+	}
+	.you {
+		width: 100%;
+	}
+	.you p {
+		font-size: 30px;
+	}
+
+	.sunrin {
+		width: 100%;
+	}
+
+  .Ilove {
+        margin-top: 50px;
+    }
+}

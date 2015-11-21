@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./default.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+            <div class="section section-1">
+                <div class="content content-1">
+                <div class="nav">
+                    <div class="name">
+                        <h1>Philip</h1>
+                    </div>
+                    <div class="menu clearfix">
+                        <ul class="clearfix" style="padding-left: 0px;">
+                            <li><a href="#" id="bold">About me</a></li>
+                            <li><a href="#" id="skills">skill-set</a></li>
+                            <li><a href="#" id="honors">honors&Awards</a></li>
+                            <li><a href="#" id="outputs">outputs</a></li>
+                        </ul>
+                        <a id="pull" href="#"></a>
+                    </div><!-- end of menu -->
+                  </div><!-- end of nav -->
+                    <img src="http://i.imgur.com/inAyW0L.jpg" alt="">
+                    <h1 id="bg_text">Philip YoonShin</h1>
+                    <p>I'm a programmer who develops web applications<br>
+                    I also used to research vulnerability based in Linux</p>
+                </div>
+            </div><!-- end of section -->
+        </div><!-- end of first -->
+        <div class="content content-2">
+            <h1 id="h1">SKILLS</h1>
+            <div class="three">
+                <div class="col">
+                    <i class="fa fa-html5"></i>
+                    <div class="sex">
+                    <h1>FRONTEND</h1>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JS</p>
+                    <p>JQuery</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa fa-cogs"></i>
+                    <div class="sex">
+                    <h1>BACKEND</h1>
+                    <p>PHP</p>
+                    <p>Node.Js</p>
+                    <p id="err1">Mysql</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa fa-bug"></i>
+                    <div class="sex">
+                    <h1>EXPLOIT</h1>
+                    <p id="err">Pwnable based in Linux</p></div>
+                </div>
+            </div><!-- end of three -->
+        </div><!-- end of content-->
+        <div class="section section-2">
+            <div class="content content-3">
+                <h1>HONORS & AWARDS</h1>
+                <div class="Ilove">
+                    <div class="sunrin">
+                        <img src="http://i.imgur.com/rxV5y20.png">
+                        <h1>Codegate Junior Seminar 2015</h1>
+                        <p>I explained Debugging tool Peda & ROP Demo with
+                        peda</p>
+                    </div>
+                    <div class="sunrin">
+                        <img src="http://i.imgur.com/hogWayD.png">
+                        <h1>Trained at the education center</h1>
+                        <p>I studied at the Seoul Women University of education
+                        center for security gifted students.</p>
+                    </div>
+                </div>
+            </div><!-- end of content-3 -->
+        </div><!-- end of section-2 -->
+        <div class="content content-4">
+            <h1>Outputs</h1>
+            <div class="Ilove">
+                <div class="you">
+                    <a href="https://github.com/imkimchi"><img src=
+                    "https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
+                    style="width: 256px;"></a>
+                    <p>Projects</p>
+                </div>
+                <div class="you">
+                    <a href="http://r00p3r.tistory.com"><img src=
+                    "http://i.imgur.com/tysB3is.png" style="width: 300px;"></a>
+                    <p>Wargames, ctf write ups</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="./fix_err.js"></script>
+    <script type="text/javascript">
+    $(function(){
+    $('#pull').on('click', function(e){
+        $('.nav ul').slideToggle();
+    });
+    $(window).resize(function(){
+   	      	var w=$(window).width();
+   	      	if(w>830 && $('.nav ul').is(':hidden'))
+   	      		{$('.nav ul').removeAttr('style');}
+   	      });
+        });
+
+    $(function(){  /* Scroll Event */
+          var scrollEvent = function(start, dest, time){
+            $(start).click(function(e){
+              var position = $(dest).offset();
+              $('html,body').animate({ scrollTop : position.top}, time);
+            });
+      };
+
+      scrollEvent('#skills', '.content-2', 500);
+      scrollEvent('#honors', '.content-3', 500);
+      scrollEvent('#outputs', '.content-4', 500);
+    });
+    </script>
+</body>
+</html>
