@@ -2,6 +2,7 @@
 @import  "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic";
 @import  "https://fonts.googleapis.com/css?family=Raleway:900, 300";
 @import  "https://fonts.googleapis.com/css?family=Roboto+Slab:300";
+@import  "https://fonts.googleapis.com/css?family=Roboto:900italic";
 
 html {
     box-sizing: border-box;
@@ -198,7 +199,8 @@ img, i {
 }
 
 #bg_text {
-   font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
     font-weight: 900;
     font-size: 50px;
     margin: 0;
