@@ -1,3 +1,3 @@
 # imkimchi.github.com
 
-Hi sunrin
+Portfolio for sunrin hs
